@@ -37,12 +37,10 @@ header h3 {
 /* Main Section Styles */
 main {
     padding: 20px 0;
-    background-color: #ecf0f1;
 }
 
 main p {
     font-size: 1.2rem;
-    line-height: 1.6;
 }
 
 .project-list {
@@ -52,12 +50,16 @@ main p {
 
 .project-list li {
     margin: 15px 0;
-    font-size: 1.2rem;
 }
 
 .project-description {
-    font-weight: bold;
     color: #2980b9;
+    font-size: 0.9rem;
+}
+
+.project-link {
+    text-decoration: none;
+    color: blue;
 }
 
 /* Footer Styles */
@@ -66,7 +68,9 @@ footer {
     color: #ecf0f1;
     padding: 20px 0;
     text-align: center;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
