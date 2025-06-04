@@ -1,0 +1,7 @@
+Copyright 2025 Shahzaib Ahmad. All rights reserved.
+
+This code and all related materials are the exclusive property of Shahzaib Ahmad.
+You may not use, modify, distribute, or reproduce this work without express written permission from the author.
+
+Thus, it is clearly stated that, this project is proprietary and is not open to modification, distribution, or reuse. 
+All rights are reserved by Shahzaib Ahmad.
