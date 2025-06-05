@@ -93,7 +93,11 @@ body {
 
 /* Header */
 header {
-    @extend .glass-base;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     padding: 40px;
     text-align: center;
     margin-bottom: 40px;
@@ -156,6 +160,17 @@ main {
     height: 4px;
     background: linear-gradient(45deg, #fff, #f0f8ff);
     border-radius: 2px;
+}
+
+.section-description {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 /* Grid layouts */
@@ -356,6 +371,12 @@ main {
     border-radius: 20px;
     font-size: 0.8rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
 }
 
 .project-actions {
@@ -375,6 +396,7 @@ main {
     font-size: 0.9rem;
     transition: all 0.3s ease;
     flex: 1;
+    text-align: center;
 }
 
 .view-details-btn {
@@ -476,7 +498,7 @@ main {
 }
 
 /* Sections spacing */
-.skills-section, .languages-section {
+.skills-section, .languages-section, .projects-section {
     margin-bottom: 60px;
 }
 
@@ -510,6 +532,7 @@ footer {
 
 .contact-info a:hover {
     color: white;
+    text-decoration: underline;
 }
 
 .social-links {
@@ -547,24 +570,96 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-    .container { padding: 10px; }
-    .header-content h1 { font-size: 2.5rem; }
-    .section-title { font-size: 2rem; }
-    .skills-grid, .projects-grid { grid-template-columns: 1fr; gap: 20px; }
-    .languages-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-    .project-card { padding: 20px; }
-    .project-header { flex-direction: column; gap: 15px; }
-    .project-status-badges { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
-    .project-actions { flex-direction: column; }
-    .coming-soon-content { padding: 30px 20px; }
-    .coming-soon-title { font-size: 1.6rem; }
-    .coming-soon-description { font-size: 1rem; }
+    .container { 
+        padding: 10px; 
+    }
+    
+    .header-content h1 { 
+        font-size: 2.5rem; 
+    }
+    
+    .section-title { 
+        font-size: 2rem; 
+    }
+    
+    .skills-grid, .projects-grid { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+    
+    .languages-grid { 
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 20px; 
+    }
+    
+    .project-card { 
+        padding: 20px; 
+    }
+    
+    .project-header { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    
+    .project-status-badges { 
+        align-items: flex-start; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+    
+    .project-actions { 
+        flex-direction: column; 
+    }
+    
+    .coming-soon-content { 
+        padding: 30px 20px; 
+    }
+    
+    .coming-soon-title { 
+        font-size: 1.6rem; 
+    }
+    
+    .coming-soon-description { 
+        font-size: 1rem; 
+    }
+    
+    .status-badge {
+        display: block;
+        max-width: 210px;
+        margin: 10px auto;
+    }
 }
 
 @media (max-width: 480px) {
-    .header-content h1 { font-size: 2rem; }
-    .header-content h3 { font-size: 1.2rem; }
-    .section-title { font-size: 1.8rem; margin-bottom: 30px; }
-    .skill-card, .language-card { padding: 20px; }
-    .project-status-badges { flex-direction: column; align-items: flex-start; }
+    .header-content h1 { 
+        font-size: 2rem; 
+    }
+    
+    .header-content h3 { 
+        font-size: 1.2rem; 
+    }
+    
+    .section-title { 
+        font-size: 1.8rem; 
+        margin-bottom: 30px; 
+    }
+    
+    .skill-card, .language-card { 
+        padding: 20px; 
+    }
+    
+    .project-status-badges { 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
 }
