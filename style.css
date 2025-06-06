@@ -403,6 +403,7 @@ main {
     background: rgba(255, 255, 255, 0.1);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: auto;
 }
 
 .view-details-btn:hover {
@@ -434,12 +435,24 @@ main {
     cursor: not-allowed;
     background: rgba(255, 255, 255, 0.1);
 }
+.view-details-btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.1);
+}
 
 .download-btn.disabled::after {
     content: '⏳';
 }
+.view-details-btn.disabled::after {
+    content: '⏳';
+}
 
 .download-btn.disabled:hover {
+    transform: none;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+.view-details-btn.disabled:hover {
     transform: none;
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
