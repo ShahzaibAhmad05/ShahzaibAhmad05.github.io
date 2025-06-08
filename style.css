@@ -217,9 +217,9 @@ main {
     background: linear-gradient(90deg, var(--accent-color), transparent);
 }
 
-.skills-section .section-title::before { content: '01.'; }
+/* .skills-section .section-title::before { content: '01.'; }
 .languages-section .section-title::before { content: '02.'; }
-.projects-section .section-title::before { content: '03.'; }
+.projects-section .section-title::before { content: '03.'; } */
 
 .section-description {
     color: var(--text-secondary);
@@ -286,6 +286,8 @@ main {
 /* Skill Cards */
 .skill-card {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .skill-icon {
